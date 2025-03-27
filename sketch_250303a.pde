@@ -65,8 +65,8 @@ boolean checkWin(int p) {
     if (board[i][0] == p && board[i][1] == p && board[i][2] == p) return true; // Rows
     if (board[0][i] == p && board[1][i] == p && board[2][i] == p) return true; // Columns
   }
-  if (board[0][0] == p && board[1][1] == p && board[2][2] == p) return true; // Main diagonal
-  if (board[0][2] == p && board[1][1] == p && board[2][0] == p) return true; // Other diagonal
+  if (board[0][0] == p && board[1][1] == p && board[2][2] == p) return true; // Main diagonal (links boven, middle, rechts onderaan)
+  if (board[0][2] == p && board[1][1] == p && board[2][0] == p) return true; // Other diagonal (rechts boven, middle, links onderaan)
   return false;
 }
 
